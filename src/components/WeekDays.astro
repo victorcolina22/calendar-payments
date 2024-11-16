@@ -1,0 +1,11 @@
+---
+import { WEEKDAYS } from '../constants';
+---
+
+{
+  WEEKDAYS.map((weekday) => (
+    <span class='px-5 rounded-xl bg-custom-gray text-center mb-5'>
+      {weekday.toUpperCase()}
+    </span>
+  ))
+}

@@ -1,0 +1,19 @@
+---
+import { format } from 'date-fns';
+import { MONTHLY_SPEND } from '../constants';
+import { PriceText } from './PriceText';
+
+const month = format(new Date(), 'MMM');
+const year = format(new Date(), 'yyyy');
+---
+
+<header class='flex items-center justify-between w-full'>
+  <p class='text-5xl mb-5'>
+    {month.toUpperCase()}
+    <span class='text-custom-gray'>{year}</span>
+  </p>
+  <div>
+    <p class='text-custom-gray'>{MONTHLY_SPEND}</p>
+    <PriceText />
+  </div>
+</header>
