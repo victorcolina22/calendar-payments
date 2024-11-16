@@ -19,7 +19,7 @@ export function Days({ children }: { children?: React.ReactNode }) {
         <div key={`empty-${index}`}></div>
       ))}
       {daysInMonth.map((day, index) => (
-        <PaymentsCalendar.TooltipTooltip key={index}>
+        <PaymentsCalendar.Tooltip key={index}>
           <motion.div
             className={clsx(
               'flex flex-col justify-evenly items-center bg-custom-gray rounded-xl w-16 h-16 mb-3',
@@ -33,7 +33,7 @@ export function Days({ children }: { children?: React.ReactNode }) {
           >
             {format(day, 'dd')}
           </motion.div>
-        </PaymentsCalendar.TooltipTooltip>
+        </PaymentsCalendar.Tooltip>
       ))}
     </>
   );

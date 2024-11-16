@@ -20,4 +20,4 @@ export function PaymentsCalendar({ children, provider }: Props) {
 
 PaymentsCalendar.WeekDays = WeekDays;
 PaymentsCalendar.Days = Days;
-PaymentsCalendar.TooltipTooltip = Tooltip;
+PaymentsCalendar.Tooltip = Tooltip;
